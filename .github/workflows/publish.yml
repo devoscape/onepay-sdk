@@ -8,23 +8,22 @@ on:
       - "packages/onepay-node/**"
       - ".github/workflows/publish.yml"
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node.js
+      - uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js 20.x
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
-          registry-url: "https://registry.npmjs.org"
-
-      - name: Setup pnpm
-        run: npm install -g pnpm
+          node-version: 20.x
+          cashe: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
