@@ -1,4 +1,9 @@
-# OnePay SDK
+<p align="center">
+   <img alt="Koshima logo" src="https://www.onepay.lk/assets/Images/Onepay-PG-Logo.png" width=300 >
+  </a>
+</p>
+
+<h1 align="center">OnePay-SDK</h1>
 
 A lightweight Node.js SDK to integrate payment gateway functionalities with zero dependencies and full TypeScript support.
 
