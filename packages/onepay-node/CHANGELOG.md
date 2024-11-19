@@ -1,5 +1,13 @@
 # @onepay-payment-sdk/server
 
+## 0.0.2
+
+### Patch Changes
+
+- a4a5771: Updated README.md with improved clarity
+
+  - Updated README.md to improve clarity and provide more detailed examples for usage.
+
 ## 0.0.1
 
 ### Patch Changes
