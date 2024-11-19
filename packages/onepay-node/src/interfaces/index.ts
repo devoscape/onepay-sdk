@@ -4,7 +4,6 @@ export interface OnepayConfig {
   token: string;
   appId: string;
   salt: string;
-  baseUrl?: string;
 }
 
 export interface BasicPaymentParams {

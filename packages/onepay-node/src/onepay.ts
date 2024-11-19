@@ -22,7 +22,7 @@ export class Onepay {
     this.appId = onepayConfig.appId;
     this.token = onepayConfig.token;
     this.salt = onepayConfig.salt;
-    this.baseUrl = onepayConfig.baseUrl || ENVIRONMENT_API.LIVE;
+    this.baseUrl = ENVIRONMENT_API.LIVE;
     this.paymentParams = null;
   }
 
