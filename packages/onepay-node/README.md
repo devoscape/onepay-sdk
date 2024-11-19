@@ -1,4 +1,9 @@
-# OnePay SDK
+<p align="center">
+   <img alt="Onepay logo" src="https://www.onepay.lk/assets/Images/Onepay-PG-Logo.png" width=300 >
+  </a>
+</p>
+
+<h1 align="center">OnePay-SDK</h1>
 
 A lightweight Node.js SDK to integrate payment gateway functionalities with zero dependencies and full TypeScript support.
 
@@ -32,8 +37,16 @@ npm install @onepay-payment-sdk/server
 - Create onepay config option, with parameters.
 
   ```js
-  const onepay = new Onepay();
+  const onepay = new Onepay({
+    appId: "Enter APP ID from merchant admin panel",
+    salt: "Enter SALT value from merchant admin panel",
+    token: "Enter APP TOKEN from merchant admin panel",
+  });
+  ```
 
+- Create a payment request to generate transaction information and url
+
+  ```js
   const paymentDetails = onepay.generatePaymentParams({
     amount: 100,
     email: "onepay@example.com",
@@ -48,6 +61,14 @@ npm install @onepay-payment-sdk/server
 
   console.log(response.data.gateway.redirect_url);
   ```
+
+## Configuration Parameters
+
+| Parameter | Description                                            | Type     | Required |
+| --------- | ------------------------------------------------------ | -------- | -------- |
+| `appId`   | The APP ID provided by the merchant's admin panel.     | `string` | `Yes`    |
+| `salt`    | The SALT value provided by the merchant's admin panel. | `string` | `Yes`    |
+| `token`   | The APP TOKEN provided by the merchant's admin panel.  | `string` | `Yes`    |
 
 ## License
 

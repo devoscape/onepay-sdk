@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev",
+    "typecheck": "turbo run typecheck",
     "release": "turbo run build && changeset version && changeset publish",
-    "prepare": "husky"
+    "prepare": "husky",
+    "changeset": "changeset",
   },
   "keywords": [],
   "author": "IroshaHewage",
