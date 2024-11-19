@@ -9,7 +9,7 @@
     "typecheck": "turbo run typecheck",
     "release": "turbo run build && changeset version && changeset publish",
     "prepare": "husky",
-    "changeset": "changeset",
+    "changeset": "changeset"
   },
   "keywords": [],
   "author": "IroshaHewage",
