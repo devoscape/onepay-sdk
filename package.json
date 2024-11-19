@@ -8,13 +8,17 @@
     "dev": "turbo run dev",
     "typecheck": "turbo run typecheck",
     "release": "turbo run build && changeset version && changeset publish",
-    "changeset": "changeset"
+    "prepare": "husky",
+    "changeset": "changeset",
   },
   "keywords": [],
   "author": "IroshaHewage",
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "^22.9.0",
+    "husky": "^9.1.6",
     "turbo": "^2.3.0"
   },
   "packageManager": "pnpm@9.12.3"
