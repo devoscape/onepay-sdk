@@ -66,6 +66,14 @@ export class Onepay {
   public async createPaymentRequest(
     onepayPaymentParams: OnepayPaymentParams
   ): Promise<PaymentResponse> {
+    if (!this.token) {
+      throw new Error("Token not initialized");
+    }
+
+    if (!this.salt) {
+      throw new Error("Salt not initialized");
+    }
+
     try {
       const paymentRequestUrl = generatePaymentLink({
         baseURL: this.baseUrl,
