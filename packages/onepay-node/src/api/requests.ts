@@ -1,4 +1,4 @@
-import https, { RequestOptions } from "node:https";
+import https, { RequestOptions } from "https";
 import { OnepayPaymentParams, PaymentResponse } from "../interfaces";
 import { validatePayLink } from "../validation";
 
