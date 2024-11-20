@@ -30,7 +30,7 @@ async function paymentRequest(
 
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
-      let chunks: Buffer[] = [];
+      const chunks: Buffer[] = [];
 
       res.setTimeout(TIMEOUT_MS, () => {
         req.destroy(new Error("Response timeout"));
@@ -61,7 +61,7 @@ async function paymentRequest(
             reject(error);
           }
         } catch (err) {
-          const error: Error = new Error("Failed to Process response");
+          const error: Error = new Error("Failed to Process response" + err);
           reject(error);
         }
       });

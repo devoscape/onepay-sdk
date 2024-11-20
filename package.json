@@ -9,7 +9,8 @@
     "typecheck": "turbo run typecheck",
     "release": "turbo run build && changeset version && changeset publish",
     "prepare": "husky",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "lint": "turbo run lint"
   },
   "keywords": [],
   "author": "IroshaHewage",
@@ -19,6 +20,8 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "^22.9.0",
     "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "pretty-quick": "^4.0.0",
     "turbo": "^2.3.0"
   },
   "packageManager": "pnpm@9.12.3"
