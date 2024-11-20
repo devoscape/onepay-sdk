@@ -10,7 +10,8 @@
     "release": "turbo run build && changeset version && changeset publish",
     "prepare": "husky",
     "changeset": "changeset",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "release:beta": "changeset pre enter beta && changeset version && pnpm build && pnpm publish && changeset pre exit"
   },
   "keywords": [],
   "author": "IroshaHewage",
