@@ -16,7 +16,9 @@
     "build": "tsup",
     "dev": "tsup src/**/*.ts --format cjs,esm --dts --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
   },
   "exports": {
     ".": {
