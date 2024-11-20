@@ -5,7 +5,7 @@ import { validatePayLink } from "../validation";
 async function paymentRequest(
   url: string,
   token: string,
-  body: OnepayPaymentParams
+  body: OnepayPaymentParams,
 ): Promise<PaymentResponse> {
   if (!url && !token && !body) {
     throw new Error("Missing required parameters");

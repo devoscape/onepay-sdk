@@ -6,6 +6,12 @@ export interface OnepayConfig {
   salt: string;
 }
 
+export interface PaymentLinkParams {
+  salt: string;
+  baseURL: string;
+  paymentParams: OnepayPaymentParams;
+}
+
 export interface BasicPaymentParams {
   amount: number;
   firstName: string;

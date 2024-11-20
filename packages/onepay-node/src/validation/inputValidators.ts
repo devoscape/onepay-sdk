@@ -58,7 +58,7 @@ export function validatePayLink(url: string): URL {
 
 // simple payment params validation for prevent unnecessary api calls
 export function validatePaymentParams(
-  basicParams: BasicPaymentParams
+  basicParams: BasicPaymentParams,
 ): BasicPaymentParams {
   if (
     typeof basicParams.firstName !== "string" ||
@@ -95,7 +95,7 @@ export function validatePaymentParams(
     basicParams.reference.length > 20
   ) {
     throw new Error(
-      "Reference must be a string with a length between 10 and 20 characters"
+      "Reference must be a string with a length between 10 and 20 characters",
     );
   }
 
