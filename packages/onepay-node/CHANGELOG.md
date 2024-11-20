@@ -1,5 +1,14 @@
 # @onepay-payment-sdk/server
 
+## 0.0.3-beta.0
+
+### Patch Changes
+
+- Fix esm import issue
+
+  - Bug Fixes
+    Fixed ESM Import Issue: Resolved issues with importing ES modules, ensuring compatibility with modern JavaScript imports.
+
 ## 0.0.2
 
 ### Patch Changes
