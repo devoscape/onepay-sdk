@@ -1,0 +1,6 @@
+# Build artifacts
+.turbo/
+dist/
+
+
+pnpm-lock.yaml

@@ -1,4 +1,4 @@
-import crypto from "node:crypto";
+import crypto from "crypto";
 import { OnepayPaymentParams } from "../interfaces";
 
 interface PaymentLinkParams {
@@ -28,6 +28,6 @@ export function generatePaymentLink(
 
     return `${baseURL}/request-payment-link/?hash=${hash}`;
   } catch (error) {
-    throw new Error("Generating the payment request link failed");
+    throw new Error("Generating the payment request link failed" + error);
   }
 }
