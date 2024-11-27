@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { validatePaymentParams } from "../../validation/inputValidators";
+import { validatePaymentParams } from "../../validation/payment_params_validator";
 
 describe("Payment Parameters Validation", () => {
   const validParams = {

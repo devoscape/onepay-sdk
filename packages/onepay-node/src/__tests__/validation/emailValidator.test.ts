@@ -6,7 +6,7 @@ describe("isValidEmail", () => {
     expect(isValidEmail("example@example.com")).toBe(true);
   });
   it("should return false for an invalid email without an '@' symbol", () => {
-    expect(isValidEmail("exampleexample.com")).toBe(false);
+    expect(isValidEmail("example.com")).toBe(false);
   });
   it("should return false for an invalid email with a space", () => {
     expect(isValidEmail("example example.com")).toBe(false);
