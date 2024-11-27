@@ -1,5 +1,5 @@
-import { isValidEmail } from "./emailValidator";
-import { isValidUrl } from "./urlValidator";
+import { isValidEmail } from "./email-validator";
+import { isValidUrl } from "./url-validator";
 import { BasicPaymentParams } from "../interfaces";
 
 /**

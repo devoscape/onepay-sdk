@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { validatePayLink } from "../../validation/validatePayLink";
+import { validatePayLink } from "../../validation/validate-pay-link";
 
 describe("Pay Link Validation", () => {
   it("should validate URLs with hash parameter", () => {

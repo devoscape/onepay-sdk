@@ -1,6 +1,6 @@
-import { isValidUrl } from "./urlValidator";
+import { isValidUrl } from "./url-validator";
 
-import { PaymentException } from "../exceptions/PaymentException";
+import { PaymentException } from "../exceptions/";
 
 /**
  * Validates payment link URL with strict requirements
