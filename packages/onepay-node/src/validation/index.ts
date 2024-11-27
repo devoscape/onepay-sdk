@@ -1,3 +1,6 @@
-import { validatePayLink, validatePaymentParams } from "./inputValidators";
+import { validatePaymentParams } from "./payment-params-validator";
+import { isValidEmail } from "./email-validator";
+import { validatePayLink } from "./validate-pay-link";
+import { isValidUrl } from "./url-validator";
 
-export { validatePayLink, validatePaymentParams };
+export { validatePayLink, validatePaymentParams, isValidEmail, isValidUrl };

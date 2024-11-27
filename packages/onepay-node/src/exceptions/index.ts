@@ -1,3 +1,3 @@
-import { PaymentException } from "./PaymentException";
+import { PaymentException } from "./payment-exception";
 
 export { PaymentException };

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import crypto from "crypto";
-import { generatePaymentLink } from "../../utils/generatePaymentLink";
+import { generatePaymentLink } from "../../utils/generate-payment-link";
 import { ENVIRONMENT_API } from "../../constants";
 import { PaymentLinkParams } from "../../interfaces";
 
