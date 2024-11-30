@@ -15,13 +15,6 @@
     - eslint
     - pretty-quick
 
-  ## 🛠️ Bug Fixes
-
-  - Fixed ESM Import Issue: Resolved issues with importing ES modules, ensuring compatibility with modern JavaScript imports
-    - Improved compatibility with ES module syntax
-    - Enhanced support for modern JavaScript import/export statements
-    - Better integration with package.json "type": "module" configurations
-
   ## 📦 Dependency Updates
 
   - Enforced cross-spawn@7.0.5 across all dependencies through pnpm overrides
@@ -34,8 +27,12 @@
 
 - 565ccb2: Fix esm import issue
 
-  - Bug Fixes
-    Fixed ESM Import Issue: Resolved issues with importing ES modules, ensuring compatibility with modern JavaScript imports.
+  ## 🛠️ Bug Fixes
+
+  - Fixed ESM Import Issue: Resolved issues with importing ES modules, ensuring compatibility with modern JavaScript imports
+  - Improved compatibility with ES module syntax
+  - Enhanced support for modern JavaScript import/export statements
+  - Better integration with package.json "type": "module" configurations
 
 ## 0.0.3-beta.0
 
